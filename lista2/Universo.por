@@ -1,30 +1,41 @@
-//Criar o programa “Qual o significado da vida, do universo e tudo mais?”. Ao
-//clicar, deve aparecer no console o número do universo.
-//O programa terá uma variável Inteira, com identificador “Universo”, onde
-//você irá atribuir o número em questão. Após a atribuição, escreva na tela o
-//conteúdo da variável.
-
 programa
 {
-	inclua biblioteca Mouse --> m 
+	inclua biblioteca Util -->u
+	inteiro Universo = 42
 	
 	funcao inicio()
 	{
-		escreva("Qual é o significado da vida, do universo e tudo mais?")
-
-		enquanto(nao m.algum_botao_pressionado()) { }
-
-		const inteiro Universo = 42
-		escreva(Universo)
-	} 
-
+		escreva("Qual é o significado do Universo? ")
+		limpa()
+		escreva("A questão fundamental é")
+		pontos()
+		escreva(" Da vida")
+		pontos()
+		escreva(" Do Universo")
+		pontos()
+		escreva(" E tudo mais")
+		pontos()
+		escreva(" É")
+		pontos()
+		escreva("\n")
+		escreva(" " + Universo)
+		
+	
+	
+	
+	}
+	funcao pontos()
+	{
+			para (inteiro i = 0; i<4; i++)
+			u.aguarde(400)
+			escreva("...")}
 }
 /* $$$ Portugol Studio $$$ 
  * 
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 498; 
+ * @POSICAO-CURSOR = 346; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
